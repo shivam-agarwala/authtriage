@@ -203,5 +203,3 @@ authtriage/
 tests/           unit tests over synthetic logs
 eval/            hand-labelled sample, labels, scoring script
 ```
-
-Source is 497 lines.

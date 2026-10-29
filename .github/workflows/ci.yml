@@ -1,0 +1,54 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check authtriage tests eval
+
+      - name: Unit tests
+        run: pytest -q
+
+      # Detection quality gate. A threshold change that starts missing attacks
+      # or alerting on the benign IP fails the build here, not in production.
+      - name: Detection evaluation
+        run: python eval/evaluate.py --min-f1 1.0
+
+      - name: CLI smoke test
+        run: |
+          authtriage eval/sample_auth.log --year 2026 \
+            --json-out report.json --md-out report.md
+          test -s report.json && test -s report.md
+          cat report.md
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports-py${{ matrix.python-version }}
+          path: |
+            report.json
+            report.md
+          if-no-files-found: ignore

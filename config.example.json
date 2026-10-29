@@ -1,0 +1,17 @@
+{
+  "brute_force": {
+    "min_failures": 8,
+    "window_seconds": 120
+  },
+  "user_enumeration": {
+    "min_distinct_users": 5,
+    "window_seconds": 300
+  },
+  "success_after_failures": {
+    "min_failures": 5,
+    "lookback_seconds": 600
+  },
+  "failure_kinds": ["failed_password"],
+  "max_evidence_lines": 6,
+  "ignore_ips": []
+}

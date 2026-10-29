@@ -1,0 +1,29 @@
+{
+  "_comment": "Hand-labelled ground truth for sample_auth.log. Each entry is one (rule, source_ip) pair a correct run must produce. Anything the tool reports that is not listed here counts as a false positive.",
+  "log": "sample_auth.log",
+  "config": null,
+  "expected": [
+    {
+      "rule": "brute_force",
+      "source_ip": "203.0.113.5",
+      "note": "12 failed root logins in 88s. Paired pam_unix and preauth lines must not be double counted."
+    },
+    {
+      "rule": "user_enumeration",
+      "source_ip": "203.0.113.77",
+      "note": "7 distinct non-existent usernames in 150s. Only 7 failures, so brute_force must stay silent for this IP."
+    },
+    {
+      "rule": "success_after_failures",
+      "source_ip": "192.0.2.44",
+      "source_user": "backup",
+      "note": "6 failures over 200s then a success. Too slow for brute_force at a 120s window, so only this rule should fire."
+    }
+  ],
+  "known_benign": [
+    {
+      "source_ip": "198.51.100.9",
+      "note": "Real user mistypes a password 3 times then succeeds. Any alert on this IP is a false positive."
+    }
+  ]
+}

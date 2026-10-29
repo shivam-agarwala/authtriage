@@ -1,0 +1,78 @@
+Oct 29 09:58:02 web-01 CRON[2201]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 29 10:00:05 web-01 sshd[3101]: Accepted publickey for alice from 198.51.100.9 port 51022 ssh2: RSA SHA256:7Yd2
+Oct 29 10:00:05 web-01 sshd[3101]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 29 10:01:10 web-01 sudo:   alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 29 10:02:00 web-01 sshd[3110]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.9  user=alice
+Oct 29 10:02:02 web-01 sshd[3110]: Failed password for alice from 198.51.100.9 port 51030 ssh2
+Oct 29 10:02:14 web-01 sshd[3111]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.9  user=alice
+Oct 29 10:02:16 web-01 sshd[3111]: Failed password for alice from 198.51.100.9 port 51030 ssh2
+Oct 29 10:02:29 web-01 sshd[3112]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.9  user=alice
+Oct 29 10:02:31 web-01 sshd[3112]: Failed password for alice from 198.51.100.9 port 51030 ssh2
+Oct 29 10:03:00 web-01 sshd[3120]: Accepted password for alice from 198.51.100.9 port 51044 ssh2
+Oct 29 10:05:00 web-01 sshd[4000]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:00 web-01 sshd[4000]: Failed password for root from 203.0.113.5 port 44000 ssh2
+Oct 29 10:05:01 web-01 sshd[4000]: Connection closed by authenticating user root 203.0.113.5 port 44000 [preauth]
+Oct 29 10:05:08 web-01 sshd[4001]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:08 web-01 sshd[4001]: Failed password for root from 203.0.113.5 port 44001 ssh2
+Oct 29 10:05:09 web-01 sshd[4001]: Connection closed by authenticating user root 203.0.113.5 port 44001 [preauth]
+Oct 29 10:05:16 web-01 sshd[4002]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:16 web-01 sshd[4002]: Failed password for root from 203.0.113.5 port 44002 ssh2
+Oct 29 10:05:17 web-01 sshd[4002]: Connection closed by authenticating user root 203.0.113.5 port 44002 [preauth]
+Oct 29 10:05:24 web-01 sshd[4003]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:24 web-01 sshd[4003]: Failed password for root from 203.0.113.5 port 44003 ssh2
+Oct 29 10:05:25 web-01 sshd[4003]: Connection closed by authenticating user root 203.0.113.5 port 44003 [preauth]
+Oct 29 10:05:32 web-01 sshd[4004]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:32 web-01 sshd[4004]: Failed password for root from 203.0.113.5 port 44004 ssh2
+Oct 29 10:05:33 web-01 sshd[4004]: Connection closed by authenticating user root 203.0.113.5 port 44004 [preauth]
+Oct 29 10:05:40 web-01 sshd[4005]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:40 web-01 sshd[4005]: Failed password for root from 203.0.113.5 port 44005 ssh2
+Oct 29 10:05:41 web-01 sshd[4005]: Connection closed by authenticating user root 203.0.113.5 port 44005 [preauth]
+Oct 29 10:05:48 web-01 sshd[4006]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:48 web-01 sshd[4006]: Failed password for root from 203.0.113.5 port 44006 ssh2
+Oct 29 10:05:49 web-01 sshd[4006]: Connection closed by authenticating user root 203.0.113.5 port 44006 [preauth]
+Oct 29 10:05:56 web-01 sshd[4007]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:05:56 web-01 sshd[4007]: Failed password for root from 203.0.113.5 port 44007 ssh2
+Oct 29 10:05:57 web-01 sshd[4007]: Connection closed by authenticating user root 203.0.113.5 port 44007 [preauth]
+Oct 29 10:06:04 web-01 sshd[4008]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:06:04 web-01 sshd[4008]: Failed password for root from 203.0.113.5 port 44008 ssh2
+Oct 29 10:06:05 web-01 sshd[4008]: Connection closed by authenticating user root 203.0.113.5 port 44008 [preauth]
+Oct 29 10:06:12 web-01 sshd[4009]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:06:12 web-01 sshd[4009]: Failed password for root from 203.0.113.5 port 44009 ssh2
+Oct 29 10:06:13 web-01 sshd[4009]: Connection closed by authenticating user root 203.0.113.5 port 44009 [preauth]
+Oct 29 10:06:20 web-01 sshd[4010]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:06:20 web-01 sshd[4010]: Failed password for root from 203.0.113.5 port 44010 ssh2
+Oct 29 10:06:21 web-01 sshd[4010]: Connection closed by authenticating user root 203.0.113.5 port 44010 [preauth]
+Oct 29 10:06:28 web-01 sshd[4011]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.5  user=root
+Oct 29 10:06:28 web-01 sshd[4011]: Failed password for root from 203.0.113.5 port 44011 ssh2
+Oct 29 10:06:29 web-01 sshd[4011]: Connection closed by authenticating user root 203.0.113.5 port 44011 [preauth]
+Oct 29 10:12:00 web-01 systemd[1]: Started Session 42 of user alice.
+Oct 29 10:20:00 web-01 sshd[5000]: Invalid user oracle from 203.0.113.77 port 33000
+Oct 29 10:20:01 web-01 sshd[5000]: Failed password for invalid user oracle from 203.0.113.77 port 33000 ssh2
+Oct 29 10:20:02 web-01 sshd[5000]: Connection closed by invalid user oracle 203.0.113.77 port 33000 [preauth]
+Oct 29 10:20:25 web-01 sshd[5001]: Invalid user postgres from 203.0.113.77 port 33001
+Oct 29 10:20:26 web-01 sshd[5001]: Failed password for invalid user postgres from 203.0.113.77 port 33001 ssh2
+Oct 29 10:20:27 web-01 sshd[5001]: Connection closed by invalid user postgres 203.0.113.77 port 33001 [preauth]
+Oct 29 10:20:50 web-01 sshd[5002]: Invalid user ubuntu from 203.0.113.77 port 33002
+Oct 29 10:20:51 web-01 sshd[5002]: Failed password for invalid user ubuntu from 203.0.113.77 port 33002 ssh2
+Oct 29 10:20:52 web-01 sshd[5002]: Connection closed by invalid user ubuntu 203.0.113.77 port 33002 [preauth]
+Oct 29 10:21:15 web-01 sshd[5003]: Invalid user test from 203.0.113.77 port 33003
+Oct 29 10:21:16 web-01 sshd[5003]: Failed password for invalid user test from 203.0.113.77 port 33003 ssh2
+Oct 29 10:21:17 web-01 sshd[5003]: Connection closed by invalid user test 203.0.113.77 port 33003 [preauth]
+Oct 29 10:21:40 web-01 sshd[5004]: Invalid user deploy from 203.0.113.77 port 33004
+Oct 29 10:21:41 web-01 sshd[5004]: Failed password for invalid user deploy from 203.0.113.77 port 33004 ssh2
+Oct 29 10:21:42 web-01 sshd[5004]: Connection closed by invalid user deploy 203.0.113.77 port 33004 [preauth]
+Oct 29 10:22:05 web-01 sshd[5005]: Invalid user jenkins from 203.0.113.77 port 33005
+Oct 29 10:22:06 web-01 sshd[5005]: Failed password for invalid user jenkins from 203.0.113.77 port 33005 ssh2
+Oct 29 10:22:07 web-01 sshd[5005]: Connection closed by invalid user jenkins 203.0.113.77 port 33005 [preauth]
+Oct 29 10:22:30 web-01 sshd[5006]: Invalid user git from 203.0.113.77 port 33006
+Oct 29 10:22:31 web-01 sshd[5006]: Failed password for invalid user git from 203.0.113.77 port 33006 ssh2
+Oct 29 10:22:32 web-01 sshd[5006]: Connection closed by invalid user git 203.0.113.77 port 33006 [preauth]
+Oct 29 10:40:00 web-01 sshd[6000]: Failed password for backup from 192.0.2.44 port 22100 ssh2
+Oct 29 10:40:40 web-01 sshd[6001]: Failed password for backup from 192.0.2.44 port 22101 ssh2
+Oct 29 10:41:20 web-01 sshd[6002]: Failed password for backup from 192.0.2.44 port 22102 ssh2
+Oct 29 10:42:00 web-01 sshd[6003]: Failed password for backup from 192.0.2.44 port 22103 ssh2
+Oct 29 10:42:40 web-01 sshd[6004]: Failed password for backup from 192.0.2.44 port 22104 ssh2
+Oct 29 10:43:20 web-01 sshd[6005]: Failed password for backup from 192.0.2.44 port 22105 ssh2
+Oct 29 10:44:00 web-01 sshd[6010]: Accepted password for backup from 192.0.2.44 port 22110 ssh2
+Oct 29 10:44:00 web-01 sshd[6010]: pam_unix(sshd:session): session opened for user backup by (uid=0)
+Oct 29 10:45:00 web-01 sudo:   backup : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/bash

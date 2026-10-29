@@ -1,3 +1,4 @@
+[![ci](https://github.com/shivam-agarwala/authtriage/actions/workflows/ci.yml/badge.svg)](https://github.com/shivam-agarwala/authtriage/actions/workflows/ci.yml)
 # authtriage
 
 A small Python CLI that reads Linux `sshd` authentication logs and reports three

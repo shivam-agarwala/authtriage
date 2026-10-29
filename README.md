@@ -14,7 +14,7 @@ Standard library only. No runtime dependencies.
 ## Install
 
 ```bash
-git clone <your-fork> && cd authtriage
+git clone https://github.com/shivam-agarwala/authtriage.git && cd authtriage
 pip install -e ".[dev]"      # dev extras are pytest and ruff
 ```
 
